@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Titan+One&display=swap");
+
+@font-face {
+  font-family: "Ydestreet";
+  src: url("../../../assets/Ydestreet_FONT/YdestreetL.ttf");
+}
+
+.section-one {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 1300px;
+  padding: 20px;
+  background-color: #000;
+}
+
+.mainbtnbox {
+  display: flex;
+  margin-top: 100px;
+}
+
+.Yeonjin {
+  width: 310px;
+  margin-top: 80px;
+}
+
+.content-title {
+  display: block;
+  letter-spacing: 0.5px;
+  position: relative;
+  font-size: 100px;
+  font-family: "Titan One", cursive;
+  background: linear-gradient(
+    349deg,
+    rgba(192, 250, 202, 1) 15%,
+    rgba(255, 212, 0, 1) 35%,
+    rgba(233, 115, 141, 1) 55%,
+    rgba(105, 55, 161, 1) 70%
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  margin: 0 auto;
+}
+
+.Checkingimg {
+  width: 720px;
+  position: absolute;
+  top: 7px;
+  left: 6px;
+  filter: blur(20px);
+  transition: filter 0.6s ease;
+}
+
+.Talkingimg {
+  width: 623px;
+  position: absolute;
+  top: 7px;
+  left: 52px;
+
+  filter: blur(20px);
+  transition: filter 0.6s ease;
+}
+
+.logobox {
+  margin-top: 100px;
+  display: flex;
+  width: 355.682px;
+  transform: skew(-10deg, 0);
+}
+
+.p {
+  color: #fff;
+  text-align: right;
+  font-family: "Ydestreet";
+  font-size: 19px;
+  margin-right: 20px;
+}
+
+.maincontainer {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  display: flex;
+  width: 730px;
+  height: 120px;
+  position: relative;
+}
+
+.contentsbox {
+  width: 730px;
+  height: 120px;
+  position: absolute;
+  text-align: center;
+  border-radius: 15px;
+  transition: box-shadow 0.6s ease;
+}
+
+.Checkingimg:hover {
+  animation: none;
+  filter: blur(0px);
+}
+
+.Talkingimg:hover {
+  animation: none;
+  filter: blur(0px);
+}
+
+.contentsbox:hover {
+  box-shadow: 0px 0px 15px #fff;
+  border-radius: 15px;
+}
+
+.maincontainer2 {
+  width: 710px;
+  height: 50%;
+  top: 145px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#logotext {
+  padding-left: 20px;
+  font-size: 80px;
+  font-family: "Titan One", cursive;
+  background: linear-gradient(
+    349deg,
+    rgba(192, 250, 202, 1) 15%,
+    rgba(255, 212, 0, 1) 35%,
+    rgba(233, 115, 141, 1) 55%,
+    rgba(105, 55, 161, 1) 70%
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+#logotext::before {
+  top: 5px;
+  left: 19px;
+  font-size: 83px;
+  content: "WE-ING";
+  position: absolute;
+  background: linear-gradient(
+    349deg,
+    rgba(192, 250, 202, 1) 15%,
+    rgba(255, 212, 0, 1) 35%,
+    rgba(233, 115, 141, 1) 55%,
+    rgba(105, 55, 161, 1) 70%
+  );
+  -webkit-background-clip: text;
+  color: black;
+  -webkit-text-stroke: 3px transparent;
+  transform: rotate(354deg);
+  z-index: -1;
+}
+
+#logotext::after {
+  top: -5px;
+  left: 11px;
+  font-size: 85px;
+  content: "WE-ING";
+  position: absolute;
+  background: linear-gradient(
+    349deg,
+    rgba(192, 250, 202, 1) 15%,
+    rgba(255, 212, 0, 1) 35%,
+    rgba(233, 115, 141, 1) 55%,
+    rgba(105, 55, 161, 1) 70%
+  );
+  -webkit-background-clip: text;
+  color: black;
+  -webkit-text-stroke: 3px transparent;
+  z-index: -1;
+  transform: rotate(8deg);
+}
+
+.logobox hr {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  position: absolute;
+  top: -7px;
+  left: 60px;
+  width: 65%;
+  height: 116%;
+  z-index: -2;
+  border-top: 5px solid rgba(105, 55, 161, 1);
+  border-left: 5px solid rgba(105, 55, 161, 1);
+  border-bottom: 5px solid rgba(192, 250, 202, 1);
+  border-right: 5px solid rgba(192, 250, 202, 1);
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.2),
+    0px 0px 15px rgba(255, 255, 255, 0.4), 0px 0px 25px rgba(255, 255, 255, 0.4),
+    inset 0px 0px 5px #ffffff;
+}

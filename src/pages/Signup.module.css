@@ -1,0 +1,171 @@
+/* Signup.module.css */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #000;
+  flex-direction: column;
+  color: #fff;
+}
+
+.modalWrapper {
+  display: flex;
+  background-color: #111;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  width: 80%;
+  max-width: 800px;
+  align-items: flex-start;
+  border: 5px solid #fff;
+}
+
+.form {
+  flex: 1;
+}
+
+.signup_title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.form_element {
+  position: relative;
+  margin-bottom: 10px;
+}
+.inputWithError {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 70px;
+}
+
+.input {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+.errorMessage {
+  display: block;
+  color: #ffcccc;
+  font-size: 12px;
+  font-weight: bolder;
+}
+.checkbox {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.signup_button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.signup_button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.signup_button:hover {
+  background-color: #2980b9;
+}
+
+.dateInputWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.datepicker_button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  display: inline-flex;
+  color: #fff;
+}
+
+.right {
+  margin-top: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.right {
+  flex: 1;
+  margin-left: 40px;
+  padding: 20px;
+  border-left: 1px solid #ccc;
+  overflow-y: auto;
+  height: 100%;
+  color: #fff;
+}
+
+.right h2 {
+  margin-bottom: 20px;
+}
+.errorMessage {
+  color: red;
+  font-size: 12px;
+  margin-top: -15px;
+  margin-left: 10px;
+  height: 20px;
+}
+.autocomplete {
+  position: absolute;
+  top: 80%;
+  left: 10px;
+  width: 90%;
+  z-index: 10;
+  background-color: #fff;
+  border: 1px solid #333;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.autocomplete div {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+  color: #000;
+}
+
+.autocomplete div:last-child {
+  border-bottom: none;
+}
+
+.autocomplete div:hover {
+  background-color: #f0f0f0;
+}
+.label {
+  margin-left: 10px;
+}
+.errorContainer {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.errorMessage {
+  color: red;
+}
+
+@media screen and (max-width: 600px) {
+  .form {
+    padding: 20px;
+  }
+}

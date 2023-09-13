@@ -1,0 +1,356 @@
+/* Result.module.css */
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+
+p,
+h2,
+h3 {
+  color: #fff;
+}
+
+.resultContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.content h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.mbti-check-heading {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#nameLabel {
+  color: #fff;
+}
+
+input {
+  margin-bottom: 20px;
+}
+
+.userData {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user {
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+
+.user p {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.user.selected .resultImages {
+  filter: brightness(100%);
+  transition: filter 0.3s ease;
+}
+
+
+.leftContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 0.5em solid transparent;
+  box-shadow: 0px 0px 15px #ffffff, inset 0px 0px 5px #ffffff;
+  max-height: 538.182px;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+  overflow-y: auto;
+  transition: border 0.5s ease, box-shadow 0.5s ease, transform 0.5s ease ;
+  transform: perspective(100px) rotatey(2deg);
+}
+
+.leftContent:hover {
+  border: 0.5em solid #ffffffcd;
+  box-shadow: 0px 0px 15px #ffffff, inset 0px 0px 5px #ffffff;
+  transform: perspective(100px) rotatey(0deg);
+}
+
+.leftContent::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+/*
+.leftContent {
+  border: 5px solid #fff;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  height: 545px;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+}
+*/
+
+.rightContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 544px;
+  width: 270px;
+  border: 0.5em solid transparent;
+  box-shadow: 0px 0px 15px #ffffff, inset 0px 0px 5px #ffffff;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+  overflow-y: auto;
+  transition: border 0.5s ease, box-shadow 0.5s ease, transform 0.5s ease ;
+  transform: perspective(100px) rotatey(-2deg);
+}
+
+.rightContent:hover {
+  border: 0.5em solid #ffffffcd;
+  box-shadow: 0px 0px 15px #ffffff, inset 0px 0px 5px #ffffff;
+  transform: perspective(100px) rotatey(0deg);
+}
+
+
+
+
+/*
+.rightContent {
+  border: 5px solid #fff;
+  border-radius: 10px;
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  color: #fff;
+  height: 544px;
+  overflow-y: auto;
+}
+*/
+
+
+
+.rightContent::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+.savedDataContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.compatibilityResult {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  animation: fadeIn 1s ease forwards;
+  opacity: 0;
+}
+
+.user.selected .compatibilityResult {
+  animation: fadeOut 0.5s ease forwards;
+}
+
+.userImages {
+  display: flex;
+  margin: 10px 40px;
+  font-family: "Monoton", cursive;
+  font-size: 40px;
+}
+
+.userImages .resultImages {
+  margin-right: 10px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modalContent {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  text-align: center;
+  word-break: break-all;
+}
+
+.modalContent h3 {
+  color: #000;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.modalContent input {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+
+/*버튼 시작*/
+
+
+.contentsbutton {
+  position: relative;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin: 10px 10px;
+  color: #ffffffcd;
+  background-color: transparent;
+  cursor: pointer;
+  margin: 10px 10px;
+}
+
+
+.contentsbutton::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border: none;
+  box-shadow: -4px -4px 5px #6937a1;
+  transform: translate(0px, 0px);
+  transition: transform 0.2s;
+  border-radius: 10px;
+}
+
+
+.contentsbutton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border: none;
+  box-shadow: 4px 4px 5px #83dcb7;
+  transform: translate(0px, 0px);
+  transition: transform 0.2s;
+  border-radius: 10px;
+}
+
+
+.contentsbutton:hover::before {
+  transform: translate(5px, 5px);
+  background: linear-gradient(
+    to right,
+    rgba(105, 55, 161, 0.2),
+    rgba(131, 220, 183, 0.2)
+  );
+}
+
+
+.contentsbutton:hover::after {
+  transform: translate(-5px, -5px);
+  background: linear-gradient(
+    to right,
+    rgba(105, 55, 161, 0.2),
+    rgba(131, 220, 183, 0.2)
+  );
+}
+
+
+.contentsbutton:hover {
+  color: #ffffff;
+}
+
+/*버튼 끝*/
+
+.result-texts {
+  text-align: center;
+}
+
+.result-text {
+  width: 50px;
+  height: 100px;
+  display: inline-block;
+  font-family: "Monoton", cursive;
+  font-size: 50px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 100px;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.I.selected,
+.E.selected {
+  color: #e9738d;
+  text-shadow: 0px 0px 5px #ff3399, 0px 0px 30px #ff3399, 0px 0px 40px #ff3399,
+    0px 0px 50px #fff, 0px 0px 6px #ff3399;
+}
+
+.S.selected,
+.N.selected {
+  color: #fade85;
+  text-shadow: 0px 0px 5px #ffd400, 0px 0px 30px #ffd400, 0px 0px 40px #ffd400,
+    0px 0px 50px #fff, 0px 0px 6px #ffd400;
+}
+
+.F.selected,
+.T.selected {
+  color: #bae1d3;
+  text-shadow: 0px 0px 5px #83dcb7, 0px 0px 30px #83dcb7, 0px 0px 40px #83dcb7,
+    0px 0px 50px #fff, 0px 0px 6px #83dcb7;
+}
+
+.P.selected,
+.J.selected {
+  color: #cca9dd;
+  text-shadow: 0px 0px 5px #6937a1, 0px 0px 30px #6937a1, 0px 0px 40px #6937a1,
+    0px 0px 50px #fff, 0px 0px 6px #6937a1;
+}

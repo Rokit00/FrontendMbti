@@ -1,0 +1,67 @@
+.barContainer {
+  display: flex;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border: 1px solid #000;
+  border-radius: 30px;
+  overflow: hidden;
+  height: 30px;
+}
+
+.barA,
+.barB {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+.barA .percentageText {
+  position: absolute;
+  left: 10px;
+  color: #fff;
+  font-weight: bolder;
+  z-index: 1;
+}
+
+.barB .percentageText {
+  position: absolute;
+  right: 10px;
+  color: #000;
+  font-weight: bolder;
+  z-index: 1;
+}
+
+.percentageText {
+  color: white;
+}
+
+.barA {
+  background: linear-gradient(to right, #8205ff, #fa0e2a);
+  flex: 0 0 auto;
+}
+
+.barB {
+  background: linear-gradient(to right, #fae100, #6ce54d);
+  flex: 1;
+}
+
+.chartWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 50px 50px;
+}
+
+.choicesContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 800px;
+  margin: 5px;
+  font-weight: bolder;
+  color: #fff;
+  padding: 10px;
+}

@@ -1,0 +1,14 @@
+/* SectionTwo.module.css */
+p,
+h2,
+h3 {
+  color: #fff;
+}
+.sectionTwo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: auto;
+  background-color: #000;
+}

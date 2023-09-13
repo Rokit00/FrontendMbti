@@ -1,0 +1,241 @@
+@font-face {
+  font-family: "YdestreetB";
+  src: url("../assets/Ydestreet_FONT/YdestreetB.ttf");
+}
+
+@font-face {
+  font-family: "YdestreetL";
+  src: url("../assets/Ydestreet_FONT/YdestreetL.ttf");
+}
+
+.b {
+  font-family: "YdestreetB";
+  font-size: 30px;
+}
+
+.h3 {
+  font-family: "YdestreetB";
+  font-size: 70px;
+}
+
+.p {
+  font-family: "YdestreetL";
+  font-size: 20px;
+  line-height: 1.8em;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+}
+
+.left-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  width: 33%;
+}
+
+/*
+@font-face {
+  font-family: "YdestreetB";
+  src: url("../assets/Ydestreet_FONT/YdestreetB.ttf");
+}*/
+
+.middle-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  width: 30%;
+}
+
+.right-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  width: 33%;
+  border: none;
+}
+
+.right-content h3 {
+  font-size: 50px;
+}
+
+.right-content p {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.content button {
+  border-radius: 25px;
+  border: none;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.imgBox {
+  position: relative;
+  width: 400px;
+}
+
+/*Solji set*/
+.Solji_A {
+  width: 350px;
+  animation: Solji_A 3s infinite alternate;
+}
+
+@keyframes Solji_A {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.03);
+  }
+  60% {
+    transform: scale(1);
+  }
+}
+
+.Solji_B {
+  position: relative;
+  right: -44px;
+  width: 91px;
+  top: -267px;
+  animation: Solji_B 3s infinite alternate;
+}
+
+@keyframes Solji_B {
+  0% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  25% {
+    transform: translateX(30%) translatey(-30%);
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/*
+@keyframes Solji_B {
+	0%,100% {
+    transform: translateX(0%);
+    opacity: 1;
+	}
+	30% {
+		transform: translateX(30%) translatey(-30%);
+  }
+  60% {
+		transform: translateX(30%) translatey(-30%);
+    opacity: 0;
+  }
+}
+*/
+
+/*Suhun set*/
+
+.Suhun_A {
+  width: 300px;
+}
+.Suhun_B {
+  position: relative;
+  bottom: 266px;
+  right: -88px;
+  width: 111px;
+  animation: Suhun_B 1s infinite alternate;
+}
+
+@keyframes Suhun_B {
+  0% {
+    transform: rotate3d(0, 0, 1, 360deg);
+  }
+  15% {
+    transform: rotate3d(0, 0, 1, 354deg) scale(1.03);
+  }
+  30% {
+    transform: rotate3d(0, 0, 1, 360deg);
+  }
+  45% {
+    transform: rotate3d(0, 0, 1, 360deg);
+  }
+  100% {
+    transform: rotate3d(0, 0, 1, 360deg);
+  }
+}
+
+/*Yeonjin set*/
+.Yeonjin_A {
+  width: 300px;
+  animation: Yeonjin_A 1.5s infinite alternate;
+}
+
+@keyframes Yeonjin_A {
+  0% {
+    transform: rotate3d(0, 0, 1, -2deg);
+  }
+  100% {
+    transform: rotate3d(0, 0, 1, 2deg);
+  }
+}
+
+.Yeonjin_B {
+  /*움직임 효과*/
+  position: relative;
+  width: 263px;
+  right: 2px;
+  bottom: 59px;
+  animation: Yeonjin_B 1.5s infinite alternate;
+}
+
+@keyframes Yeonjin_B {
+  0% {
+    transform: rotate3d(0, 0, 1, 2deg);
+  }
+  100% {
+    transform: rotate3d(0, 0, 1, -2deg);
+  }
+}
+
+/*Seonghwan img set*/
+.Seonghwan_a {
+  width: 400px;
+}
+.Seonghwan_b {
+  width: 26px;
+  position: relative;
+  bottom: 206px;
+  right: 51px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 2px rgba(255, 165, 0, 0.4),
+    0px 0px 4px rgba(255, 153, 0, 0.4), 0px 0px 6px rgba(255, 140, 0, 0.4),
+    0px 0px 8px rgba(255, 102, 0, 0.4), 0px 0px 10px rgba(255, 69, 0, 0.6),
+    0px 0px 12px rgba(255, 0, 0, 0.8);
+  animation: blink 3s infinite alternate;
+  opacity: 1;
+}
+
+@keyframes blink {
+  0% {
+    box-shadow: none;
+    opacity: 0.05;
+  }
+
+  100% {
+    opacity: 1;
+    box-shadow: 0px 0px 2px rgba(255, 165, 0, 0.4),
+      0px 0px 4px rgba(255, 153, 0, 0.4), 0px 0px 6px rgba(255, 140, 0, 0.4),
+      0px 0px 8px rgba(255, 102, 0, 0.4), 0px 0px 10px rgba(255, 69, 0, 0.6),
+      0px 0px 12px rgba(255, 0, 0, 0.8);
+  }
+}

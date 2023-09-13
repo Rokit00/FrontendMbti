@@ -1,0 +1,38 @@
+/* SearchResults.module.css */
+
+.cardRow {
+  width: 100%; /* 기본적으로 100%로 설정 */
+  min-width: 880px;
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.cardRow > * {
+  margin: 0 1% 2%;
+}
+
+@media (max-width: 1280px) {
+  .cardRow > * {
+    margin: 0 0.5% 2%;
+  }
+}
+
+@media (max-width: 768px) {
+  .cardRow > * {
+    margin: 0 0.25% 2%;
+  }
+}
+
+@media (max-width: 480px) {
+  .cardRow > * {
+    margin: 0 0.1% 2%;
+  }
+}
+
+.sortSelectContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: right;
+}

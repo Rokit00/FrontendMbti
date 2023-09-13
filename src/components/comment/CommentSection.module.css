@@ -1,0 +1,31 @@
+/* CommentSection.module.css */
+
+.commentsContainer {
+  margin: 50px 280px;
+  background-color: #111111;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.comment {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.opinionA {
+  align-items: flex-start;
+  margin-left: 50px;
+}
+
+.opinionB {
+  align-items: flex-end;
+  margin-right: 50px;
+}
+
+.inputContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}

@@ -1,0 +1,120 @@
+body {
+  background-color: #000;
+}
+
+.Myinfo {
+  height: 100vh;
+  width: auto;
+  display: flex;
+}
+
+.Box1 {
+  width: 400px;
+  height: 100vh;
+  border-right-style: solid;
+  border-right-width: 3px;
+  border-right-color: white;
+}
+
+.Box2 {
+  width: 100vh;
+  height: 100vh;
+}
+
+.menulist {
+  width: 200px;
+  top: 10vh;
+  position: relative;
+  margin: 0 auto;
+}
+
+.h2 {
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.h1 {
+  color: white;
+  margin-bottom: 0px;
+}
+
+.p {
+  margin-top: 5px;
+  color: white;
+}
+
+label {
+  color: #fff;
+}
+
+.inputbox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.infor {
+  min-width: 350px;
+  width: 50vh;
+  height: 70vh;
+  text-align: center;
+  border: 3px solid white;
+  border-radius: 15px;
+  position: relative;
+  top: 10vh;
+  margin: 20px auto;
+}
+
+.Mycontentlist {
+  min-width: 350px;
+  width: 50vh;
+  height: 70vh;
+  text-align: center;
+  border: 3px solid white;
+  border-radius: 15px;
+  position: relative;
+  top: 10vh;
+  margin: 20px auto;
+}
+
+.no-decoration {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+a.active span {
+  color: red;
+}
+
+.postContainer {
+  background-color: black;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.postTitle {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.postDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.postOption,
+.postDate,
+.postViews,
+.postLikes {
+  color: white;
+  font-size: 18px;
+}

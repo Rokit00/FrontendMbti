@@ -1,0 +1,56 @@
+/* CommentText.module.css */
+
+.text {
+  background-color: #eaeaea;
+  color: #111111;
+  padding: 10px;
+  position: relative;
+  border: none;
+  margin-left: 50px;
+  margin-right: 50px;
+  max-width: 55%;
+  text-align: left;
+}
+
+.opinionA {
+  align-items: flex-start;
+  border-radius: 0 10px 10px 10px;
+  margin-left: 60px;
+}
+
+.opinionB {
+  align-items: flex-end;
+  border-radius: 10px 0 10px 10px;
+  margin-right: 60px;
+}
+
+.commentActions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  font-size: 0.8rem;
+  color: #555;
+  align-items: center;
+}
+
+.likeButton,
+.reportButton {
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  color: #000;
+}
+
+.likeButton:hover {
+  background-color: #828080;
+}
+
+.reportButton:hover {
+  background-color: #ffcccc;
+}
+
+.commentDate {
+  margin-left: 5px;
+  color: #000;
+}

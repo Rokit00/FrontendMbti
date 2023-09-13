@@ -1,0 +1,141 @@
+/*게시물 목록*/
+.container {
+  max-width: 190px;
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  height: 310px;
+  border: 1px solid #fff;
+  padding: 10px;
+  margin: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.card {
+  
+  flex: 0 0 calc(25.33%);
+  max-width: calc(25.33% - 20px);
+  height: 310px;
+  border: 1px solid #fff;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+small {
+  font-size: 10px;
+}
+.cardInfo {
+  margin-top: 20px;
+}
+.title,
+.percent,
+.options {
+  margin: 0;
+  color: #fff;
+}
+.percent {
+  font-weight: bolder;
+  font-size: 20px;
+  margin-top: 20px;
+}
+.options {
+  display: flex;
+  text-align: center;
+  justify-items: center;
+  margin-left: 28px;
+  margin-top: -10px;
+  font-size: 11px;
+  font-weight: 800;
+}
+.option:first-child {
+  margin-right: 35px;
+}
+
+.hashtags {
+  color: #939393;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin: 10px 10px;
+  color: #366eff;
+}
+.iconWrapper:hover {
+  color: #85a5f5;
+}
+
+.iconWrapper svg {
+  margin-right: 5px;
+}
+.cardRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 940px;
+}
+.hiddenSpace {
+  display: inline-block;
+  visibility: hidden;
+  height: 14px;
+}
+.sortSelectContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: right;
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+.modalContent button {
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #366eff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.modalContent button:hover {
+  background-color: #85a5f5;
+}
+.modalContainer {
+  background-color: #000;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modalContent input {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+}
+.modalContent {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

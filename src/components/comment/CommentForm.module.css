@@ -1,0 +1,56 @@
+.inputContainer {
+  display: flex;
+  margin: 20px 280px;
+  align-items: center;
+}
+
+.opinionButton,
+.commentInput,
+.submitButton {
+  height: 40px;
+  box-sizing: border-box;
+}
+
+.opinionButton {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-right: 10px;
+}
+
+.opinionButton.selectedA {
+  background-color: #3498db;
+  color: white;
+}
+
+.opinionButton.selectedB {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.commentInput {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.submitButton {
+  padding: 10px 20px;
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submitButton:hover {
+  background-color: #34495e;
+}
+.comment {
+  flex-direction: row-reverse;
+}

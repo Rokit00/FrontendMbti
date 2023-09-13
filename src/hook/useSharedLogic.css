@@ -1,0 +1,37 @@
+.saved-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.data-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.data-row .saved-data {
+  margin-right: 20px;
+}
+
+.saved-data h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.userName {
+  cursor: pointer;
+}
+.result-images {
+  float: left;
+  align-items: center;
+  cursor: pointer;
+}
+
+.result-image {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}

@@ -1,0 +1,53 @@
+.modalBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(1px);
+  z-index: 999;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.modalContent {
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  flex-grow: 1;
+}
+
+.modalLogin {
+  border: 4px solid #fff;
+  box-shadow: 0 0 15px #fff, inset 0 0 5px #fff;
+  height: 680px;
+  background-image: none;
+  top: -40px;
+}
+
+.card {
+  border: 4px solid #fff;
+  height: 600px;
+}
+
+.closeButton {
+  position: relative;
+  top: 368px;
+  right: -197px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  color: white;
+  z-index: 1001;
+}
